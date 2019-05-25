@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_gravity="center_horizontal"
+android:orientation="horizontal"
+android:background="@drawable/bcg">
+<ImageView
+    android:id="@+id/label"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:src="@drawable/chat2"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="80dp"
+    />
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="20dp"
+        app:mtf_image="@drawable/account"
+        app:mtf_labelColor="#666">
+
+        <EditText
+            android:id="@+id/EditText01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label"
+            android:hint="账号"
+            android:textColor="#333"
+            android:textSize="15sp" />
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="240dp"
+        app:mtf_image="@drawable/password"
+        app:mtf_labelColor="#666">
+
+        <EditText
+            android:id="@+id/EditText02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="密码"
+            android:textColor="#333"
+            android:textSize="15sp" />
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
+<TextView
+    android:id="@+id/error"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/label"
+    android:layout_marginTop="150dp"
+    android:layout_centerHorizontal="true"
+    android:textColorHint="@color/white"
+    />
+    <TextView
+        android:id="@+id/savepass"
+        android:layout_below="@+id/error"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="保存密码"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        />
+    <com.uniquestudio.library.CircleCheckBox
+    android:id="@+id/checkbox_normal"
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        app:background_color="@color/white"
+        app:border_color="#1E88E5"
+        app:tick_color="#1E88E5"
+    android:layout_below="@+id/error"
+        android:layout_alignParentRight="true"
+        materialdesign:check="false"
+    />
+<ToggleButton
+    android:id="@+id/toggle_button_normal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/error"
+    android:button="@drawable/show_password"
+    android:background="#00000000"
+    android:textOn="@null"
+    android:textOff="@null"
+    android:checked="false"
+    android:text="显示密码"
+    android:textColor="@color/white"
+    />
+    <com.gc.materialdesign.views.ButtonRectangle
+    android:id="@+id/button_login"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/toggle_button_normal"
+    android:text="@string/login_button"
+    android:background="#1E88E5"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    />
+    <com.gc.materialdesign.views.ButtonRectangle
+    android:id="@+id/button_register"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/button_login"
+    android:text="@string/register_button"
+    android:background="#1E88E5"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    />
+
+
+</RelativeLayout>

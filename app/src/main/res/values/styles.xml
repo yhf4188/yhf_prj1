@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/powderblue</item>
+        <item name="colorPrimaryDark">@color/mediumslateblue</item>
+        <item name="colorAccent">#1E88E5</item>
+        <!--&lt;!&ndash; 添加这一句， 即可改变toolbar menu 图标的颜色&ndash;&gt;-->
+        <item name="android:textColorSecondary">@color/white</item>
+        <!--&lt;!&ndash;toolbar标题文字颜色&ndash;&gt;-->
+    <!--<item name="android:textColorPrimary">@color/white</item>-->
+</style>
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+<!-- Base application theme. -->
+    <style name="EditTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#1E88E5</item>
+        <!--&lt;!&ndash; 添加这一句， 即可改变toolbar menu 图标的颜色&ndash;&gt;-->
+        <item name="android:textColorSecondary">@color/colorPrimary</item>
+        <!--&lt;!&ndash;toolbar标题文字颜色&ndash;&gt;-->
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="BottomNavigationTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#1E88E5</item>
+    </style>
+
+    <!--修改searchView字体颜色、大小-->
+    <style name="SearchViewTheme" parent="Widget.AppCompat.SearchView">
+        <item name="android:textColorHint">@color/smssdk_gray</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.chat.controller.RegisterActivity"
+    android:background="@drawable/bc3">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/reg_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:hint="用户名"
+                    android:theme="@style/BottomNavigationTheme"
+                    android:textColorHint="@color/grey"
+                    tools:layout_editor_absoluteX="81dp"
+                    tools:layout_editor_absoluteY="226dp" />
+
+                <EditText
+                    android:id="@+id/reg_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:hint="密码"
+                    android:theme="@style/BottomNavigationTheme"
+                    android:textColorHint="@color/grey"
+                    tools:layout_editor_absoluteX="81dp"
+                    tools:layout_editor_absoluteY="226dp" />
+
+                <EditText
+                    android:id="@+id/reg_checkpwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:hint="确认密码"
+                    android:theme="@style/BottomNavigationTheme"
+                    android:textColorHint="@color/grey"
+                    tools:layout_editor_absoluteX="81dp"
+                    tools:layout_editor_absoluteY="226dp" />
+
+                <EditText
+                    android:id="@+id/reg_tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:hint="联系方式"
+                    android:theme="@style/BottomNavigationTheme"
+                    android:textColorHint="@color/grey"
+                    tools:layout_editor_absoluteX="81dp"
+                    tools:layout_editor_absoluteY="226dp" />
+
+                <com.chat.View.AutoComplete
+                    android:id="@+id/reg_mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:layout_marginBottom="183dp"
+                    android:hint="邮箱"
+                    android:theme="@style/BottomNavigationTheme"
+                    android:textColorHint="@color/grey"
+                    tools:layout_editor_absoluteX="82dp"
+                    tools:layout_editor_absoluteY="157dp"
+                    android:shadowRadius="1"
+                    android:numeric="decimal"/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bt_regist_save"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:background="#1E88E5"
+                android:text="保存"
+                android:textColor="@color/white"
+                tools:layout_editor_absoluteX="81dp"
+                tools:layout_editor_absoluteY="306dp" />
+
+            <Button
+                android:id="@+id/bt_regist_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:background="#1E88E5"
+                android:text="取消"
+                android:textColor="@color/white"
+                tools:layout_editor_absoluteX="215dp"
+                tools:layout_editor_absoluteY="306dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
